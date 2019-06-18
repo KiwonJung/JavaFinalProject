@@ -15,7 +15,7 @@ public class ZipReader {
 	}
 
 	private void run(String[] args) {
-		//String path = args[0];
+		String path = args[0]; //This part was joosuk
 		
 		readFileInZip("0001.zip");
 		

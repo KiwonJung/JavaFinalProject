@@ -20,8 +20,8 @@ public class ExcelReader {
 		System.out.println(path);
 		
 		try (InputStream inp = new FileInputStream(path)) {
-		    //InputStream inp = new FileInputStream("workbook.xlsx");
-		    
+		    InputStream inp = new FileInputStream("workbook.xlsx");
+		    //This part was joosuk
 		        Workbook wb = WorkbookFactory.create(inp);
 		        Sheet sheet = wb.getSheetAt(0);
 		        Row row = sheet.getRow(2);
@@ -46,8 +46,8 @@ public class ExcelReader {
 		ArrayList<String> values = new ArrayList<String>();
 		
 		try (InputStream inp = is) {
-		    //InputStream inp = new FileInputStream("workbook.xlsx");
-		    
+		    InputStream inp = new FileInputStream("workbook.xlsx");
+		    //This part was joosuk
 		        Workbook wb = WorkbookFactory.create(inp);
 		        Sheet sheet = wb.getSheetAt(0);
 		        Row row = sheet.getRow(2);
